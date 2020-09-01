@@ -1,0 +1,15 @@
+{
+  "name": "kola",
+  "version": "1.0.0",
+  "description": "My first css art, its kola bear",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/verreaux/CSS_Art.git"
+  },
+  "author": "Verreauxblack (RAJ)",
+  "license": "ISC"
+}
