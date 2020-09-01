@@ -1,0 +1,40 @@
+
+
+body{
+    background-color: yellow;
+}
+
+.box{
+    border: 5px solid red;
+    background: white;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+
+.head{
+    position: absolute;
+    width: 45%;
+    height: 46%;
+    background: #38ACEC;
+    top: 10%;
+    left: 28%;
+    border-radius: 48%;
+    border: 1px solid #2B3856;
+}
+
+.chin{
+    position: absolute;
+    width: 85%;
+    height: 103%;
+    border-radius: 71% 71% 75% 75%;
+    background: white;
+    top: 10%;
+    left: 7.6%;
+    transform: rotateX(45deg);
+    border: 1px solid #2B3856;
+}
+
