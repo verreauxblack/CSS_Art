@@ -48,12 +48,12 @@ $beltColor: #e42208;
 
 
 body{
-    background-color: yellow;
+    background-color: whitesmoke;
 }
 
 .box{
-    border: 5px solid red;
-    background: $skinWhite;
+    border: 5px solid transparent;
+    //background: $skinWhite;
     position: relative;
     width: 500px;
     height: 500px;
