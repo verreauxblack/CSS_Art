@@ -16,3 +16,4 @@
 
 #[PokeBall](https://verreauxblack.github.io/CSS_Art/pokeBall/index.html)
     
+    Animated
