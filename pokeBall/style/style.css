@@ -1,1 +1,131 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.box {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  top: 20vh;
+  overflow: visible;
+}
+
+.ball {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #ea8080;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ea8080), color-stop(40%, #fb0101), color-stop(40%, black), color-stop(60%, black), color-stop(60%, white), to(#d4d4d4));
+  background: linear-gradient(180deg, #ea8080 0%, #fb0101 40%, black 40%, black 60%, white 60%, #d4d4d4 100%);
+  overflow: hidden;
+  -webkit-box-shadow: 58px 57px 8px -32px rgba(0, 0, 0, 0.22);
+  box-shadow: 58px 57px 8px -32px rgba(0, 0, 0, 0.22);
+}
+
+.button {
+  position: absolute;
+  top: 30%;
+  left: 28%;
+  width: 30%;
+  display: block;
+  height: 30%;
+  border-radius: 50%;
+  border: 15px solid black;
+  background-color: white;
+  -webkit-animation: buttons 10s infinite linear;
+          animation: buttons 10s infinite linear;
+}
+
+.button::after {
+  position: absolute;
+  content: "";
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  border: 3px solid black;
+  top: 11%;
+  left: 11%;
+}
+
+.glow {
+  position: absolute;
+  width: 20%;
+  height: 10%;
+  top: 10%;
+  left: 15%;
+  background-color: white;
+  border-radius: 100px / 50px;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
+@-webkit-keyframes buttons {
+  0% {
+  }
+  10% {
+    top: 32%;
+    width: 25%;
+  }
+  15% {
+    width: 20%;
+    height: 25%;
+  }
+  20% {
+    width: 15%;
+  }
+  25% {
+    left: 100%;
+  }
+  50% {
+    z-index: -1;
+  }
+  75% {
+    left: -20%;
+  }
+  80% {
+    width: 15%;
+  }
+  85% {
+    width: 20%;
+    height: 25%;
+  }
+  90% {
+    top: 32%;
+    width: 25%;
+  }
+}
+
+@keyframes buttons {
+  0% {
+  }
+  10% {
+    top: 32%;
+    width: 25%;
+  }
+  15% {
+    width: 20%;
+    height: 25%;
+  }
+  20% {
+    width: 15%;
+  }
+  25% {
+    left: 100%;
+  }
+  50% {
+    z-index: -1;
+  }
+  75% {
+    left: -20%;
+  }
+  80% {
+    width: 15%;
+  }
+  85% {
+    width: 20%;
+    height: 25%;
+  }
+  90% {
+    top: 32%;
+    width: 25%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
