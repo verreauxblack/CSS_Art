@@ -13,4 +13,4 @@
 
     # [PokeBall](https://verreauxblack.github.io/CSS_Art/pokeBall/index.html)
     
-    [Spot](https://www.bostondynamics.com/spot) 
+[Spot](https://www.bostondynamics.com/spot) 
