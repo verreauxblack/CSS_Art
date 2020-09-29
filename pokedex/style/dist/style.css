@@ -385,6 +385,7 @@ body {
   border-radius: 10px;
   border-top-left-radius: 0;
   border: 0.2px solid black;
+  cursor: pointer;
 }
 .flip .main-border {
   background-color: #ff0000;
@@ -406,6 +407,12 @@ body {
   top: -2.1vmin;
   left: 5.9vmin;
   z-index: 1;
+}
+
+.openFlip {
+  transform: rotateY(-180deg);
+  transform-origin: 3vmin;
+  transition: 0.5s linear;
 }
 
 .flip2 {

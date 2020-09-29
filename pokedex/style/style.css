@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 150px;
+  border: 2px solid black;
+  height: 150px;
+}
+
+.pokedex {
+  position: relative;
+}
+
+.outer {
+  overflow: hidden;
+  width: 32vmin;
+  height: 50vmin;
+  background-color: #ff0000;
+  border: .3px solid black;
+}
+
+.layer1 {
+  position: absolute;
+  width: 13.5vmin;
+  height: 6vmin;
+  top: 0;
+  right: 0;
+  background-color: #ff0000;
+  border-bottom: .2px solid black;
+  border-top: .2px solid black;
+  border-right: .2px solid black;
+}
+
+.layer2 {
+  position: absolute;
+  width: 14.8vmin;
+  height: 10vmin;
+  top: 0;
+  left: 0;
+  background-color: #ff0000;
+  border-bottom-right-radius: .3px;
+  border-bottom: .2px solid black;
+  border-top: .2px solid black;
+  border-left: .2px solid black;
+}
+
+.layer3 {
+  width: 6.5vmin;
+  height: 8.5vmin;
+  position: absolute;
+  background-color: #ff0000;
+  border-bottom: .2px solid black;
+  border-right: .2px solid transparent;
+  top: 0.35vmin;
+  left: 11.3vmin;
+  -webkit-transform: rotate(-38.5deg);
+          transform: rotate(-38.5deg);
+  border-radius: 0 20px 0 0;
+}
+
+.top-layer1 {
+  top: .6vmin;
+  left: 0;
+  position: absolute;
+}
+
+.top-layer1 .layer1, .top-layer1 .layer2, .top-layer1 .layer3 {
+  background-color: #990000;
+  border-top: .2px solid transparent;
+}
+
+.top-layer1 .layer1 {
+  top: -.1vmin;
+  left: 19vmin;
+  width: 13vmin;
+}
+
+.top-layer1 .layer2 {
+  left: 0;
+}
+
+.top-layer1 .layer3 {
+  -webkit-transform: rotate(-38.8deg);
+          transform: rotate(-38.8deg);
+}
+
+.main-border {
+  width: 27vmin;
+  height: 38vmin;
+  bottom: 1vmin;
+  left: 1vmin;
+  position: absolute;
+  border: .2px solid black;
+}
+
+.main-border2 {
+  width: 8.3vmin;
+  height: 5vmin;
+  position: absolute;
+  border: .2px solid black;
+  top: 7vmin;
+  right: 4vmin;
+  background-color: #ff0000;
+  border-bottom: 0;
+  border-left: 0;
+  border-top-left-radius: .3px;
+}
+
+.main-border3 {
+  width: 6.4vmin;
+  height: 8.5vmin;
+  -webkit-transform: rotate(-39.5deg);
+          transform: rotate(-39.5deg);
+  border-top: .2px solid black;
+  position: absolute;
+  left: 16.8vmin;
+  top: 8vmin;
+  border-top-right-radius: .3px;
+  background-color: #ff0000;
+}
+
+.top-lights {
+  width: 7vmin;
+  height: 7vmin;
+  border-radius: 50%;
+  position: absolute;
+  border: .3px solid black;
+  background-color: white;
+  top: 2vmin;
+  left: 2.5vmin;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-lights .inner-light {
+  width: 5.8vmin;
+  height: 5.8vmin;
+  border-radius: 50%;
+  position: absolute;
+  border: .3px solid black;
+  background: #f3f3f3;
+  background: radial-gradient(circle, #f3f3f3 9%, #0fadfe 70%);
+}
+
+.lights {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 10vmin;
+  top: .9vmin;
+}
+
+.red-light, .yellow-light, .green-light {
+  width: 1.6vmin;
+  height: 1.6vmin;
+  border-radius: 50%;
+  margin: .5px;
+  border: .2px solid black;
+}
+
+.red-light {
+  background: #f3f3f3;
+  background: radial-gradient(circle, #f3f3f3 7%, #b80808 42%);
+}
+
+.yellow-light {
+  background: #f3f3f3;
+  background: radial-gradient(circle, #f3f3f3 12%, #bbbf08 59%);
+}
+
+.green-light {
+  background: #f3f3f3;
+  background: radial-gradient(circle, #f3f3f3 12%, #197102 58%);
+}
+
+.display {
+  width: 22vmin;
+  height: 19vmin;
+  left: 2.6vmin;
+  top: 3vmin;
+  position: absolute;
+  border: .3px solid black;
+  z-index: 1;
+  border-radius: 5% 5% 5% 18% / 5% 5% 5% 18%;
+  background-color: white;
+}
+
+.d1 {
+  top: 3.4vmin;
+  left: 3vmin;
+}
+
+.screen {
+  width: 17vmin;
+  height: 11vmin;
+  background-color: black;
+  border: .3px solid black;
+  border-radius: 1px;
+  position: absolute;
+  left: 2vmin;
+  top: 2.8vmin;
+}
+
+.indicators {
+  position: relative;
+  width: 7vmin;
+  height: 1.3vmin;
+  top: .8vmin;
+  left: 7vmin;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.light {
+  width: 1vmin;
+  height: 1vmin;
+  border-radius: 50%;
+  background-color: #e60000;
+  border: .3px solid black;
+}
+
+.power-light {
+  position: absolute;
+  width: 2.1vmin;
+  height: 2.1vmin;
+  border-radius: 50%;
+  bottom: 1.8vmin;
+  left: 2vmin;
+  background-color: #e60000;
+  border: .3px solid black;
+}
+
+.stripes {
+  position: relative;
+  left: 16.5vmin;
+  top: 13.5vmin;
+}
+
+.stripe {
+  width: 2.5vmin;
+  height: 0;
+  border-bottom: .38px solid black;
+  margin-bottom: .5px;
+}
+
+.power-button {
+  width: 3vmin;
+  height: 3vmin;
+  border-radius: 50%;
+  background-color: #333333;
+  border-bottom: .5px solid black;
+  border-right: .5px solid black;
+  bottom: 9vmin;
+  left: 2vmin;
+  position: absolute;
+}
+
+.green-box {
+  width: 8vmin;
+  height: 5vmin;
+  position: absolute;
+  border: .3px solid black;
+  left: 7vmin;
+  bottom: 3vmin;
+  background-color: green;
+}
+
+.main-border .lights {
+  position: relative;
+  top: 24vmin;
+  width: 8vmin;
+  left: 7vmin;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-border .lights .light-indi {
+  width: 3.4vmin;
+  height: .6vmin;
+  border: .3px solid black;
+  border-radius: 2px;
+}
+
+.main-border .lights .red {
+  background-color: #e60000;
+}
+
+.main-border .lights .blue {
+  background-color: darkblue;
+}
+
+.circle {
+  width: 3vmin;
+  height: 3vmin;
+  border-radius: 50%;
+  background-color: #333333;
+  position: absolute;
+}
+/*# sourceMappingURL=style.css.map */
