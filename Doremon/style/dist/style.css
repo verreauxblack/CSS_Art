@@ -1,14 +1,8 @@
 body {
   background-color: whitesmoke;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .box {
@@ -17,15 +11,9 @@ body {
   height: 80vh;
   top: 0vw;
   left: 0vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .head {
@@ -49,10 +37,8 @@ body {
   background: white;
   top: 11%;
   left: 7%;
-  -webkit-transform: rotateX(45deg);
-          transform: rotateX(45deg);
-  -webkit-box-shadow: -10px 24px 74px -12px rgba(0, 0, 0, 0.75);
-          box-shadow: -10px 24px 74px -12px rgba(0, 0, 0, 0.75);
+  transform: rotateX(45deg);
+  box-shadow: -10px 24px 74px -12px rgba(0, 0, 0, 0.75);
 }
 
 .left-eye {
@@ -86,8 +72,7 @@ body {
   border-radius: 41% 38% 38% 41%;
   top: -17%;
   right: 8.15vmin;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .right-pupil {
@@ -120,8 +105,7 @@ body {
   background: whitesmoke;
   top: 30%;
   right: 16%;
-  -webkit-box-shadow: -20px 5px 30px 0px rgba(0, 0, 0, 0.89);
-          box-shadow: -20px 5px 30px 0px rgba(0, 0, 0, 0.89);
+  box-shadow: -20px 5px 30px 0px rgba(0, 0, 0, 0.89);
   z-index: 7;
 }
 
@@ -151,8 +135,7 @@ body {
   width: 19%;
   left: 7%;
   top: 28%;
-  -webkit-transform: rotate(24deg);
-          transform: rotate(24deg);
+  transform: rotate(24deg);
 }
 
 .meesai-left-2 {
@@ -171,8 +154,7 @@ body {
   width: 19%;
   left: 7%;
   top: 48%;
-  -webkit-transform: rotate(-24deg);
-          transform: rotate(-24deg);
+  transform: rotate(-24deg);
 }
 
 .meesai-right-1 {
@@ -182,8 +164,7 @@ body {
   width: 19%;
   right: 7%;
   top: 28%;
-  -webkit-transform: rotate(-24deg);
-          transform: rotate(-24deg);
+  transform: rotate(-24deg);
 }
 
 .meesai-right-2 {
@@ -202,8 +183,7 @@ body {
   width: 19%;
   right: 7%;
   top: 48%;
-  -webkit-transform: rotate(24deg);
-          transform: rotate(24deg);
+  transform: rotate(24deg);
 }
 
 .body {
@@ -227,8 +207,7 @@ body {
   z-index: 1;
   bottom: -1%;
   border-radius: 20px 0 0 0;
-  -webkit-box-shadow: -10px 5px 30px 0px rgba(0, 0, 0, 0.75);
-          box-shadow: -10px 5px 30px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -10px 5px 30px 0px rgba(0, 0, 0, 0.75);
 }
 
 .body-copy {
@@ -254,8 +233,7 @@ body {
   width: 26vmin;
   height: 26vmin;
   z-index: 3;
-  -webkit-box-shadow: -75px 9px 66px -32px rgba(0, 0, 0, 0.75);
-          box-shadow: -75px 9px 66px -32px rgba(0, 0, 0, 0.75);
+  box-shadow: -75px 9px 66px -32px rgba(0, 0, 0, 0.75);
 }
 
 .pocket {
@@ -334,8 +312,7 @@ body {
   border: 1px solid #2B3856;
   width: 20%;
   height: 40%;
-  -webkit-transform: rotate(50deg);
-          transform: rotate(50deg);
+  transform: rotate(50deg);
   top: 5%;
   left: -14%;
   background: #3EB5E1;
@@ -359,8 +336,7 @@ body {
   border: 1px solid #2B3856;
   width: 20%;
   height: 40%;
-  -webkit-transform: rotate(-50deg);
-          transform: rotate(-50deg);
+  transform: rotate(-50deg);
   top: 5%;
   right: -14%;
   background: #3EB5E1;
@@ -415,4 +391,3 @@ body {
   bottom: -2%;
   left: 44%;
 }
-/*# sourceMappingURL=style.css.map */
