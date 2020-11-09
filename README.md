@@ -1,21 +1,21 @@
 #CSS_ART :
 
-#[Kola](https://verreauxblack.github.io/CSS_Art/Kola/index.html)
+#[Kola](https://verreauxblack.github.io/CSS_Art/Kola/)
 
      My first CSS ART
 
-#[Doremon](https://verreauxblack.github.io/CSS_Art/Doremon/index.html)
+#[Doremon](https://verreauxblack.github.io/CSS_Art/Doremon/)
 
-#[Polaroid Camera](https://verreauxblack.github.io/CSS_Art/Polaroid/index.html)
+#[Polaroid Camera](https://verreauxblack.github.io/CSS_Art/Polaroid/)
         
     Animated
 
-#[Love Bus](https://verreauxblack.github.io/CSS_Art/love_bus/index.html)
+#[Love Bus](https://verreauxblack.github.io/CSS_Art/love_bus/)
          
     Animated
 
-#[PokeBall](https://verreauxblack.github.io/CSS_Art/pokeBall/index.html)
+#[PokeBall](https://verreauxblack.github.io/CSS_Art/pokeBall/)
     
     Animated
 
-#[Pokedex](https://verreauxblack.github.io/CSS_Art/pokedex/index.html)
+#[Pokedex](https://verreauxblack.github.io/CSS_Art/pokedex/)

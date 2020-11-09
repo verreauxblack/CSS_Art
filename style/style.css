@@ -10,4 +10,45 @@ li {
 #box {
   border: 2px solid;
 }
+
+.art-block {
+  margin: 0 20vmin;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[3];
+  -ms-grid-columns: (1fr)[3];
+      grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+}
+
+.art-block .card-doremon {
+  width: 210px;
+  height: 270px;
+  border: 2px solid black;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.art-block .card-doremon .doremon-img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 10px;
+}
+
+.art-block .card-doremon:hover {
+  -webkit-box-shadow: 6px 6px 22px 5px rgba(0, 0, 0, 0.73);
+  box-shadow: 6px 6px 22px 3px rgba(0, 0, 0, 0.73);
+  border: .3px solid transparent;
+}
 /*# sourceMappingURL=style.css.map */
