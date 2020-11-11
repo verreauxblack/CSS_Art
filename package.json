@@ -1,0 +1,20 @@
+{
+  "name": "css_art",
+  "version": "1.0.0",
+  "description": "my css art showcase page",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "imagemin": "imagemin socialMedia/* --out-dir=dist/socialMedia"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/verreauxblack/CSS_Art.git"
+  },
+  "author": "RAJ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/verreauxblack/CSS_Art/issues"
+  },
+  "homepage": "https://github.com/verreauxblack/CSS_Art#readme"
+}
