@@ -1,54 +1,223 @@
-.art-list {
-  list-style: none;
+html {
+  margin: 0;
+  padding: 0;
 }
 
-li {
-  font-size: larger;
-  padding: 20px 20px 20px 20px;
+body {
+  margin: 0;
 }
 
-#box {
-  border: 2px solid;
+.box {
+  margin: 40px;
+  margin-top: 90px;
 }
 
 .art-block {
-  margin: 0 20vmin;
+  position: relative;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (1fr)[3];
   -ms-grid-columns: (1fr)[3];
       grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+  grid-gap: 50px;
 }
 
-.art-block .card-doremon {
-  width: 210px;
-  height: 270px;
+.card {
+  position: relative;
+  width: 400px;
+  height: 450px;
   border: 2px solid black;
-  border-radius: 20px;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.card .card-blur {
+  position: absolute;
+  height: 100%;
+  width: calc(100% + 1px);
+  background-color: black;
+  opacity: 0;
+  -webkit-transition: opacity 0.15s ease-in;
+  transition: opacity 0.15s ease-in;
+}
+
+.footer {
+  z-index: 1;
+  position: absolute;
+  height: 80px;
+  width: 100%;
+  bottom: 0;
+}
+
+#curve, #curve2, #curve3, #curve4, #curve5, #curve6, #curve7 {
+  position: absolute;
+  fill: white;
+  left: 0;
+  bottom: 0;
+  width: 400px;
+  height: 450px;
+}
+
+.connections {
+  height: 80px;
+  width: 400px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 100px;
+  margin: auto;
+}
+
+.connection {
+  height: 55px;
+  width: 55px;
+  border-radius: 100%;
+  background-color: white;
+  display: inline-block;
+  padding: 5px;
+  margin-right: 25px;
+  -webkit-transform: translateY(200px);
+          transform: translateY(200px);
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.46, 1.48, 0.18, 0.81);
+  transition: -webkit-transform 1s cubic-bezier(0.46, 1.48, 0.18, 0.81);
+  transition: transform 1s cubic-bezier(0.46, 1.48, 0.18, 0.81);
+  transition: transform 1s cubic-bezier(0.46, 1.48, 0.18, 0.81), -webkit-transform 1s cubic-bezier(0.46, 1.48, 0.18, 0.81);
+  cursor: pointer;
+  border: none;
+}
+
+.code {
+  margin-left: 20px;
+  padding: 5px;
+}
+
+.live {
+  -webkit-transition-delay: 0.04s;
+          transition-delay: 0.04s;
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
 }
 
-.art-block .card-doremon .doremon-img {
-  width: 10rem;
-  height: 10rem;
-  border-radius: 10px;
+.info {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding-left: 20px;
+  -webkit-transform: translateY(250px);
+          transform: translateY(250px);
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.31, 1.21, 0.64, 1.02);
+  transition: -webkit-transform 1s cubic-bezier(0.31, 1.21, 0.64, 1.02);
+  transition: transform 1s cubic-bezier(0.31, 1.21, 0.64, 1.02);
+  transition: transform 1s cubic-bezier(0.31, 1.21, 0.64, 1.02), -webkit-transform 1s cubic-bezier(0.31, 1.21, 0.64, 1.02);
 }
 
-.art-block .card-doremon:hover {
+.info .name {
+  font-weight: bolder;
+}
+
+.info .job {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.card:hover {
   -webkit-box-shadow: 6px 6px 22px 5px rgba(0, 0, 0, 0.73);
   box-shadow: 6px 6px 22px 3px rgba(0, 0, 0, 0.73);
   border: .3px solid transparent;
+}
+
+.card:hover .card-blur {
+  opacity: 0.6;
+}
+
+.card:hover .connection {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.card:hover .connection:hover {
+  background-color: #00154f;
+  color: white;
+  border: .2px solid white;
+}
+
+.card:hover .info {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.doremon {
+  background-image: url(/pic/doremon.png);
+}
+
+.love-bus {
+  background-image: url(/pic/Love-Bus.gif);
+}
+
+.Polaroid {
+  background-image: url(/pic/Polaroid-Camera.gif);
+}
+
+.pokeball {
+  background-image: url(/pic/Pokeball.gif);
+}
+
+.kola {
+  background-image: url(/pic/kola.png);
+}
+
+.pokedex {
+  background-image: url(/pic/pokedex.png);
+}
+
+.cityscape {
+  background-image: url(/pic/underConstruction.jpg);
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .art-block {
+    -ms-grid-rows: (1fr)[7];
+    -ms-grid-columns: (1fr)[1];
+        grid-template: repeat(7, 1fr)/repeat(1, 1fr);
+    grid-gap: 50px;
+    width: 400px;
+  }
+  .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-device-width: 480px) and (max-device-height: 768px) {
+  .art-block {
+    -ms-grid-rows: (1fr)[4];
+    -ms-grid-columns: (1fr)[2];
+        grid-template: repeat(4, 1fr)/repeat(2, 1fr);
+    grid-gap: 50px;
+    width: 400px;
+    margin: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
