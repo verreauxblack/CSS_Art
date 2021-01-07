@@ -1,0 +1,320 @@
+.flip {
+  position: absolute;
+  width: 28.8vmin;
+  height: 34.6vmin;
+  bottom: 0.5vmin;
+  left: 32vmin;
+  background-color: #ff0000;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border: 0.2px solid black;
+  cursor: pointer;
+  -webkit-transform-origin: -11px;
+          transform-origin: -11px;
+  -webkit-transition: -webkit-transform 1s linear;
+  transition: -webkit-transform 1s linear;
+  transition: transform 1s linear;
+  transition: transform 1s linear, -webkit-transform 1s linear;
+  border-top-right-radius: 0;
+  border-top-color: transparent;
+  z-index: 1;
+}
+
+.flip .main-border {
+  background-color: #ff0000;
+  height: 36.4vmin;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 0;
+}
+
+.center-top-flip {
+  top: -66px;
+}
+
+.logo {
+  position: absolute;
+  width: 120px;
+  top: 40px;
+  left: 40px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.pokedex-logo {
+  position: absolute;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  width: 200px;
+  bottom: 0px;
+}
+
+.open {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 110px;
+  right: 0;
+  border-top: 10px solid transparent;
+  border-left: 20px solid yellow;
+  border-bottom: 10px solid transparent;
+}
+
+.open:hover {
+  border-left: 20px solid #cccc00;
+}
+
+.closeFlip {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 1.2s linear;
+  transition: -webkit-transform 1.2s linear;
+  transition: transform 1.2s linear;
+  transition: transform 1.2s linear, -webkit-transform 1.2s linear;
+}
+
+.Hidden {
+  visibility: hidden;
+}
+
+.openFlip {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transition: -webkit-transform 1.2s linear;
+  transition: -webkit-transform 1.2s linear;
+  transition: transform 1.2s linear;
+  transition: transform 1.2s linear, -webkit-transform 1.2s linear;
+}
+
+.visible {
+  visibility: visible;
+  -webkit-transition: visibility 1s linear;
+  transition: visibility 1s linear;
+}
+
+.center-top-flip2 {
+  top: -59px;
+  left: 8px;
+}
+
+.flip .screen:first-child {
+  top: 10px;
+  z-index: 2;
+  width: 23vmin;
+  height: 9vmin;
+  border-radius: 3px;
+}
+
+.flip .screen:nth-child(2), .flip .screen:nth-child(3) {
+  border-radius: 4px;
+  width: 8vmin;
+  top: 30vmin;
+  height: 3.5vmin;
+}
+
+.flip .screen:nth-child(3) {
+  left: 17vmin;
+}
+
+.flip .main-border .lights {
+  width: 7vmin;
+  left: 15vmin;
+  top: 21vmin;
+}
+
+.flip .main-border .lights .light-indi {
+  background-color: black;
+}
+
+.blue-buttons {
+  width: 23vmin;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 0vmin;
+  position: absolute;
+  -ms-grid-rows: (3vmin)[2];
+  -ms-grid-columns: (1fr)[5];
+      grid-template: repeat(2, 3vmin)/repeat(5, 1fr);
+  border-radius: 4px;
+  top: 12.5vmin;
+  left: 2vmin;
+  background-color: #239ed0;
+  border: 0.2px solid black;
+}
+
+.blue-buttons .btn:nth-child(1) {
+  border-right: 0.3px solid black;
+}
+
+.blue-buttons .btn:nth-child(2) {
+  border-right: 0.3px solid black;
+}
+
+.blue-buttons .btn:nth-child(3) {
+  border-right: 0.3px solid black;
+}
+
+.blue-buttons .btn:nth-child(4) {
+  border-right: 0.3px solid black;
+}
+
+.blue-buttons .btn:nth-child(6) {
+  border-top: 0.3px solid black;
+  border-right: 0.3px solid black;
+}
+
+.blue-buttons .btn:nth-child(7) {
+  border-top: 0.3px solid black;
+  border-right: 0.3px solid black;
+}
+
+.blue-buttons .btn:nth-child(8) {
+  border-top: 0.3px solid black;
+  border-right: 0.3px solid black;
+}
+
+.blue-buttons .btn:nth-child(9) {
+  border-top: 0.3px solid black;
+  border-right: 0.3px solid black;
+}
+
+.blue-buttons .btn:nth-child(10) {
+  border-top: 0.3px solid black;
+  border-right: 0.3px solid black;
+}
+
+.blue-buttons .btn:nth-child(10) {
+  border-right: 0;
+}
+
+.under {
+  top: 12.7vmin;
+  left: 2.25vmin;
+}
+
+.white-button {
+  width: 8vmin;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 0vmin;
+  position: absolute;
+  -ms-grid-rows: 3vmin;
+  -ms-grid-columns: (1fr)[2];
+      grid-template: 3vmin/repeat(2, 1fr);
+  background-color: white;
+  top: 23vmin;
+  left: 2vmin;
+  border-radius: 4px;
+  border: 0.1px solid black;
+}
+
+.white-button .btn:first-child {
+  border-right: 0.1px solid black;
+}
+
+.under2 {
+  top: 23.2vmin;
+  left: 2.2vmin;
+}
+
+.golden-button {
+  width: 3vmin;
+  height: 3vmin;
+  border-radius: 50%;
+  background: white;
+  border: 0.3px solid black;
+  top: 24vmin;
+  position: absolute;
+  left: 20vmin;
+  background: radial-gradient(circle, white 11%, #ebe50c 41%, #88852c 92%);
+}
+
+.pokemonDetails {
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  visibility: hidden;
+}
+
+.pokemonDetails #name {
+  font-family: 'Aladin', cursive;
+  letter-spacing: 2px;
+  font-weight: 200;
+}
+
+.pokemonDetails .types {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pokemonDetails .types hr {
+  height: 100%;
+  margin: 0 2px;
+}
+
+.pokemonDetails .types .type, .pokemonDetails .types .weakness {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: smaller;
+  letter-spacing: .5px;
+}
+
+.pokemonDetails .types .type h5 {
+  letter-spacing: 1.5px;
+}
+
+.pokemonDetails .types .weakness h5 {
+  color: red;
+}
+
+#am {
+  font-size: 8px;
+}
+
+.time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+}
+
+#date {
+  color: white;
+  font-size: 11px;
+  letter-spacing: .5px;
+}
+/*# sourceMappingURL=flipDoor.css.map */

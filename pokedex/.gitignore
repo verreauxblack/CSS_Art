@@ -1,3 +1,12 @@
-style/style.scss
-style/style.css.map
-pic/
+# style/style.scss
+# style/style.css.map
+# style/flipDoor.scss
+# style/flipDoor.css.map
+style/
+pic/Details/
+css/style.scss
+css/style.css.map
+css/flipDoor.scss
+css/flipDoor.css.map
+pokedexSVG/
+debug.log
