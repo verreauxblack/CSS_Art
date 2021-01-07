@@ -250,119 +250,119 @@ var pokemonDetails = {
     },
     11 : {
         0 : {
-            "name" : "",
-            "type" : "",
-            "weakness" :"",
-            "Img-215x215" : "",
+            "name" : "Nidoran♀",
+            "type" : "Poison",
+            "weakness" :"Psychic, Ground",
+            "Img-215x215" : "pic/Nidoran-female/Nidoran-1.png",
             "nameAudio" : "mp3/pokemons/.mp3"
         },
         1 : {
-            "name" : "",
-            "type" : "",
-            "weakness" :"",
-            "Img-215x215" : "",
+            "name" : "Nidorina",
+            "type" : "Poison",
+            "weakness" :"Psychic, Ground",
+            "Img-215x215" : "pic/Nidoran-female/Nidorina-2.png",
             "nameAudio" : "mp3/pokemons/.mp3"
         },
         2 : {
-            "name" : "",
-            "type" : "",
-            "weakness" :"",
-            "Img-215x215" : "",
+            "name" : "Nidoqueen",
+            "type" : "Poison, Ground",
+            "weakness" :"water, Psychic",
+            "Img-215x215" : "pic/Nidoran-female/Nidoqueen-3.png",
             "nameAudio" : "mp3/pokemons/.mp3"
         }
     },
     12 : {
         0 : {
-            "name" : "",
-            "type" : "",
-            "weakness" :"",
-            "Img-215x215" : "",
+            "name" : "Nidoran♂",
+            "type" : "Poison",
+            "weakness" :"Psychic, Ground",
+            "Img-215x215" : "pic/Nidoran-male/Nidoran-1.png",
             "nameAudio" : "mp3/pokemons/.mp3"
         },
         1 : {
-            "name" : "",
-            "type" : "",
-            "weakness" :"",
-            "Img-215x215" : "",
+            "name" : "Nidorino",
+            "type" : "Poison",
+            "weakness" :"Psychic, Ground",
+            "Img-215x215" : "pic/Nidoran-male/Nidorino-2.png",
             "nameAudio" : "mp3/pokemons/.mp3"
         },
         2 : {
-            "name" : "",
-            "type" : "",
-            "weakness" :"",
-            "Img-215x215" : "",
+            "name" : "Nidoking",
+            "type" : "Poison, Ground",
+            "weakness" :"water, Psychic",
+            "Img-215x215" : "pic/Nidoran-male/NidoKing-3.png",
             "nameAudio" : "mp3/pokemons/.mp3"
         }
     },
     13 : {
         0 : {
-            "name" : "",
-            "type" : "",
-            "weakness" :"",
-            "Img-215x215" : "",
+            "name" : "Cleffa",
+            "type" : "Fairy",
+            "weakness" :"Steel, Poison",
+            "Img-215x215" : "pic/Clefairy/Cleffa-1.png",
             "nameAudio" : "mp3/pokemons/.mp3"
         },
         1 : {
-            "name" : "",
-            "type" : "",
-            "weakness" :"",
-            "Img-215x215" : "",
+            "name" : "Clefairy",
+            "type" : "Fairy",
+            "weakness" :"Steel, Poison",
+            "Img-215x215" : "pic/Clefairy/Clefairy-2.png",
             "nameAudio" : "mp3/pokemons/.mp3"
         },
         2 : {
-            "name" : "",
-            "type" : "",
-            "weakness" :"",
-            "Img-215x215" : "",
+            "name" : "Clefable",
+            "type" : "Fairy",
+            "weakness" :"Steel, Poison",
+            "Img-215x215" : "pic/Clefairy/Clefable-3.png",
             "nameAudio" : "mp3/pokemons/.mp3"
         }
     },
-    14 : {
-        0 : {
-            "name" : "",
-            "type" : "",
-            "weakness" :"",
-            "Img-215x215" : "",
-            "nameAudio" : "mp3/pokemons/.mp3"
-        },
-        1 : {
-            "name" : "",
-            "type" : "",
-            "weakness" :"",
-            "Img-215x215" : "",
-            "nameAudio" : "mp3/pokemons/.mp3"
-        },
-        2 : {
-            "name" : "",
-            "type" : "",
-            "weakness" :"",
-            "Img-215x215" : "",
-            "nameAudio" : "mp3/pokemons/.mp3"
-        }
-    },
-    15 : {
-        0 : {
-            "name" : "",
-            "type" : "",
-            "weakness" :"",
-            "Img-215x215" : "",
-            "nameAudio" : "mp3/pokemons/.mp3"
-        },
-        1 : {
-            "name" : "",
-            "type" : "",
-            "weakness" :"",
-            "Img-215x215" : "",
-            "nameAudio" : "mp3/pokemons/.mp3"
-        },
-        2 : {
-            "name" : "",
-            "type" : "",
-            "weakness" :"",
-            "Img-215x215" : "",
-            "nameAudio" : "mp3/pokemons/.mp3"
-        }
-    },
+    // 14 : {
+    //     0 : {
+    //         "name" : "",
+    //         "type" : "",
+    //         "weakness" :"",
+    //         "Img-215x215" : "",
+    //         "nameAudio" : "mp3/pokemons/.mp3"
+    //     },
+    //     1 : {
+    //         "name" : "",
+    //         "type" : "",
+    //         "weakness" :"",
+    //         "Img-215x215" : "",
+    //         "nameAudio" : "mp3/pokemons/.mp3"
+    //     },
+    //     2 : {
+    //         "name" : "",
+    //         "type" : "",
+    //         "weakness" :"",
+    //         "Img-215x215" : "",
+    //         "nameAudio" : "mp3/pokemons/.mp3"
+    //     }
+    // },
+    // 15 : {
+    //     0 : {
+    //         "name" : "",
+    //         "type" : "",
+    //         "weakness" :"",
+    //         "Img-215x215" : "",
+    //         "nameAudio" : "mp3/pokemons/.mp3"
+    //     },
+    //     1 : {
+    //         "name" : "",
+    //         "type" : "",
+    //         "weakness" :"",
+    //         "Img-215x215" : "",
+    //         "nameAudio" : "mp3/pokemons/.mp3"
+    //     },
+    //     2 : {
+    //         "name" : "",
+    //         "type" : "",
+    //         "weakness" :"",
+    //         "Img-215x215" : "",
+    //         "nameAudio" : "mp3/pokemons/.mp3"
+    //     }
+    // },
     // 15 : {
     //     0 : {
     //         "name" : "",
