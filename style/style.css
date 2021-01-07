@@ -188,6 +188,7 @@ body {
   background-image: url(/pic/underConstruction.jpg);
 }
 
+<<<<<<< HEAD
 .analogclock {
   background-image: url(/pic/analogClock.png);
 }
@@ -198,6 +199,14 @@ body {
     -ms-grid-rows: (1fr)[8];
     -ms-grid-columns: (1fr)[1];
         grid-template: repeat(8, 1fr)/repeat(1, 1fr);
+=======
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .art-block {
+    -ms-grid-rows: (1fr)[7];
+    -ms-grid-columns: (1fr)[1];
+        grid-template: repeat(7, 1fr)/repeat(1, 1fr);
+>>>>>>> f2c0f496b1b445f54f836fe49ad1842bcd66d530
     grid-gap: 50px;
     width: 400px;
   }

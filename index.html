@@ -6,34 +6,43 @@
         <meta http-equiv="X-UA-Compatible" content="IE=7">
         <meta name="description" content="These arts are new Css artist RAJ">
         <link rel="stylesheet" href="style/style.css">
-        <link rel="stylesheet" href="style/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="style/bootstrap.min.css"> -->
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-SV4W6KLPB0"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-SV4W6KLPB0');
+        </script>
         <meta name="p:domain_verify" content="adfe59431bce4f6d844d7bf223061fc4"/>
+        <!-- jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
     </head>
     <body>
-
-        <div class=" m-5 border-secondary" id="box">
-            <nav class=" nav">
-
-            </nav>
+        <span id="navigation"></span>
+        <!-- <div class=" m-5 border-secondary" id="box">
+            
             <ul class=" art-list flex flex-column">
                 <li class="art-name">
-                    <a href="Kola/">
-                        <iframe src="kola/" width="400px" height="400px"></iframe><br>Kola</a></li>
+                    <a href="Kola/">Kola</a></li>
                 <li class="art-name">
-                    <iframe src="Doremon/" width="400px" height="400px"></iframe><br>
                     <a href="Doremon/">Doremon</a></li>
 
                 <li class="art-name">
-                    <iframe src="Polaroid/" width="400px" height="400px"></iframe><br>
                     <a href="Polaroid/">Polaroid Camera</a></li>
 
                 <li class="art-name">
-                    <iframe src="love_bus/" width="400px" height="400px"></iframe><br><a href="love_bus/">Love Bus</a></li>
+                    <a href="love_bus/">Love Bus</a></li>
 
                 <li class="art-name">
-                    <iframe src="pokeBall/" width="400px" height="400px"></iframe><br><a href="pokeBall/">PokeBall</a></li>
+                    <a href="pokeBall/">PokeBall</a></li>
 
-                <li class="art-name"><iframe src="Pokedex/" width="400px" height="400px"></iframe><br><a href="pokedex/">Pokedex</a></li>
+                <li class="art-name"><a href="pokedex/">Pokedex</a></li> -->
 
                 <!-- <li>
                     <a href="https://twitter.com/verreauxblack?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @verreauxblack</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><br>
@@ -43,9 +52,262 @@
                     <br>
                     
                 </li> -->
-            </ul>
+            <!-- </ul>
 
-        </div>
-        
+        </div> -->
+       <div class="box">
+            <div class="art-block">
+                <div class="doremon card">
+                    <div class="footer">
+                        <svg id="curve">
+                            <path id="p" d="M0,200 Q80,100 400,200 V150 H0 V50" transform="translate(0 300)" />
+                            <rect id="dummyRect" x="0" y="0" height="450" width="400"
+                        fill="transparent" />
+                            <!-- slide up-->
+                            <animate xlink:href="#p" attributename="d" to="M0,50 Q80,100 400,50 V150 H0 V50" fill="freeze" begin="dummyRect.mouseover" end="dummyRect.mouseout" dur="0.1s" id="bounce1" />
+                            <!-- slide up and curve in -->
+                            <animate xlink:href="#p" attributename="d" to="M0,50 Q80,0 400,50 V150 H0 V50" fill="freeze" begin="bounce1.end" end="dummyRect.mouseout" dur="0.15s" id="bounce2" />
+                            <!-- slide down and curve in -->
+                            <animate xlink:href="#p" attributename="d" to="M0,50 Q80,80 400,50 V150 H0 V50" fill="freeze" begin="bounce2.end" end="dummyRect.mouseout" dur="0.15s" id="bounce3" />
+                            <!-- slide down and curve out -->
+                            <animate xlink:href="#p" attributename="d" to="M0,50 Q80,45 400,50 V150 H0 V50" fill="freeze" begin="bounce3.end" end="dummyRect.mouseout" dur="0.1s" id="bounce4" />
+                            <!-- curve in -->
+                            <animate xlink:href="#p" attributename="d" to="M0,50 Q80,50 400,50 V150 H0 V50" fill="freeze" begin="bounce4.end" end="dummyRect.mouseout" dur="0.05s" id="bounce5" />
+                
+                            <animate xlink:href="#p" attributename="d" to="M0,200 Q80,100 400,200 V150 H0 V50" fill="freeze" begin="dummyRect.mouseout" dur="0.15s" id="bounceOut" />
+                        </svg>
+                        <div class="info">
+                            <div class="name">Doremon</div>
+                            <div class="job">without Animation </div>
+                        </div>
+                        <div class="connections">
+                            <button type="button" onclick="window.location.href='https://codepen.io/verreauxblack/pen/rNeZXev';" title="codepen" class="connection code">Code</button>
+                            <button type="button" onclick="window.location.href='Doremon/';"   class="connection live">Live</button>
+                        </div>
+                    </div>
+                    <div class="card-blur"></div>
+                </div>
+                <!-- end of doremon -->
+                <div class="love-bus card">
+                    <div class="footer">
+
+                        <svg id="curve2">
+                            <path id="p2" d="M0,200 Q80,100 400,200 V150 H0 V50" transform="translate(0 300)" />
+                            <rect id="dummyRect2" x="0" y="0" height="450" width="400"
+                        fill="transparent" />
+                            <!-- slide up-->
+                            <animate xlink:href="#p2" attributename="d" to="M0,50 Q80,100 400,50 V150 H0 V50" fill="freeze" begin="dummyRect2.mouseover" end="dummyRect2.mouseout" dur="0.1s" id="bounce12" />
+                            <!-- slide up and curve in -->
+                            <animate xlink:href="#p2" attributename="d" to="M0,50 Q80,0 400,50 V150 H0 V50" fill="freeze" begin="bounce12.end" end="dummyRect2.mouseout" dur="0.15s" id="bounce22" />
+                            <!-- slide down and curve in -->
+                            <animate xlink:href="#p2" attributename="d" to="M0,50 Q80,80 400,50 V150 H0 V50" fill="freeze" begin="bounce22.end" end="dummyRect2.mouseout" dur="0.15s" id="bounce32" />
+                            <!-- slide down and curve out -->
+                            <animate xlink:href="#p2" attributename="d" to="M0,50 Q80,45 400,50 V150 H0 V50" fill="freeze" begin="bounce32.end" end="dummyRect2.mouseout" dur="0.1s" id="bounce42" />
+                            <!-- curve in -->
+                            <animate xlink:href="#p2" attributename="d" to="M0,50 Q80,50 400,50 V150 H0 V50" fill="freeze" begin="bounce42.end" end="dummyRect2.mouseout" dur="0.05s" id="bounce52" />
+                
+                            <animate xlink:href="#p2" attributename="d" to="M0,200 Q80,100 400,200 V150 H0 V50" fill="freeze" begin="dummyRect2.mouseout" dur="0.15s" id="bounceOut2" />
+                        </svg>
+                        <div class="info">
+                            <div class="name">Love Bus</div>
+                            <div class="job">with Animation </div>
+                        </div>
+                        <div class="connections">
+                            <button type="button" onclick="window.location.href='https://codepen.io/verreauxblack/pen/abNaeJP ' ;" title="codepen" class="connection code">Code</button>
+                            <button type="button" onclick="window.location.href='love_bus/';"   class="connection live">Live</button>
+                        </div>
+                    </div>
+                    <div class="card-blur"></div>
+                </div>
+                <!-- end of love bus -->
+                <div class="pokeball card">
+                    <div class="footer">
+
+                        <svg id="curve3">
+                            <path id="p3" d="M0,200 Q80,100 400,200 V150 H0 V50" transform="translate(0 300)" />
+                            <rect id="dummyRect3" x="0" y="0" height="450" width="400"
+                        fill="transparent" />
+                            <!-- slide up-->
+                            <animate xlink:href="#p3" attributename="d" to="M0,50 Q80,100 400,50 V150 H0 V50" fill="freeze" begin="dummyRect3.mouseover" end="dummyRect3.mouseout" dur="0.1s" id="bounce13" />
+                            <!-- slide up and curve in -->
+                            <animate xlink:href="#p3" attributename="d" to="M0,50 Q80,0 400,50 V150 H0 V50" fill="freeze" begin="bounce13.end" end="dummyRect3.mouseout" dur="0.15s" id="bounce23" />
+                            <!-- slide down and curve in -->
+                            <animate xlink:href="#p3" attributename="d" to="M0,50 Q80,80 400,50 V150 H0 V50" fill="freeze" begin="bounce23.end" end="dummyRect3.mouseout" dur="0.15s" id="bounce33" />
+                            <!-- slide down and curve out -->
+                            <animate xlink:href="#p3" attributename="d" to="M0,50 Q80,45 400,50 V150 H0 V50" fill="freeze" begin="bounce33.end" end="dummyRect3.mouseout" dur="0.1s" id="bounce43" />
+                            <!-- curve in -->
+                            <animate xlink:href="#p3" attributename="d" to="M0,50 Q80,50 400,50 V150 H0 V50" fill="freeze" begin="bounce43.end" end="dummyRect3.mouseout" dur="0.05s" id="bounce53" />
+                
+                            <animate xlink:href="#p3" attributename="d" to="M0,200 Q80,100 400,200 V150 H0 V50" fill="freeze" begin="dummyRect3.mouseout" dur="0.15s" id="bounceOut3" />
+                        </svg>
+                        <div class="info">
+                            <div class="name">Pokeball</div>
+                            <div class="job">with Animation </div>
+                        </div>
+                        <div class="connections">
+                            <button type="button" onclick="window.location.href='https://codepen.io/verreauxblack/pen/NWNEQEb';" title="codepen" class="connection code">Code</button>
+                            <button type="button" onclick="window.location.href='pokeBall/';"   class="connection live">Live</button>
+                        </div>
+                    </div>
+                    <div class="card-blur"></div>
+                </div>
+                <!-- end of pokeball -->
+                <div class="Polaroid card">
+                    <div class="footer">
+
+                        <svg id="curve4">
+                            <path id="p4" d="M0,200 Q80,100 400,200 V150 H0 V50" transform="translate(0 300)" />
+                            <rect id="dummyRect4" x="0" y="0" height="450" width="400"
+                        fill="transparent" />
+                            <!-- slide up-->
+                            <animate xlink:href="#p4" attributename="d" to="M0,50 Q80,100 400,50 V150 H0 V50" fill="freeze" begin="dummyRect4.mouseover" end="dummyRect4.mouseout" dur="0.1s" id="bounce14" />
+                            <!-- slide up and curve in -->
+                            <animate xlink:href="#p4" attributename="d" to="M0,50 Q80,0 400,50 V150 H0 V50" fill="freeze" begin="bounce14.end" end="dummyRect4.mouseout" dur="0.15s" id="bounce24" />
+                            <!-- slide down and curve in -->
+                            <animate xlink:href="#p4" attributename="d" to="M0,50 Q80,80 400,50 V150 H0 V50" fill="freeze" begin="bounce24.end" end="dummyRect4.mouseout" dur="0.15s" id="bounce34" />
+                            <!-- slide down and curve out -->
+                            <animate xlink:href="#p4" attributename="d" to="M0,50 Q80,45 400,50 V150 H0 V50" fill="freeze" begin="bounce34.end" end="dummyRect4.mouseout" dur="0.1s" id="bounce44" />
+                            <!-- curve in -->
+                            <animate xlink:href="#p4" attributename="d" to="M0,50 Q80,50 400,50 V150 H0 V50" fill="freeze" begin="bounce44.end" end="dummyRect4.mouseout" dur="0.05s" id="bounce54" />
+                
+                            <animate xlink:href="#p4" attributename="d" to="M0,200 Q80,100 400,200 V150 H0 V50" fill="freeze" begin="dummyRect4.mouseout" dur="0.15s" id="bounceOut4" />
+                        </svg>
+                        <div class="info">
+                            <div class="name">Polaroid Camera</div>
+                            <div class="job">with Animation </div>
+                        </div>
+                        <div class="connections">
+                            <button type="button" onclick="window.location.href='https://codepen.io/verreauxblack/pen/GRZXVNp';"  title="codepen" class="connection code">Code</button>
+                            <button type="button" onclick="window.location.href='Polaroid/';"   class="connection live">Live</button>
+                        </div>
+                    </div>
+                    <div class="card-blur"></div>
+                </div>
+                <!-- end of polaroid -->
+
+                <div class="kola card">
+                    <div class="footer">
+                        <svg id="curve5">
+                            <path id="p5" d="M0,200 Q80,100 400,200 V150 H0 V50" transform="translate(0 300)" />
+                            <rect id="dummyRect5" x="0" y="0" height="450" width="400"
+                        fill="transparent" />
+                            <!-- slide up-->
+                            <animate xlink:href="#p5" attributename="d" to="M0,50 Q80,100 400,50 V150 H0 V50" fill="freeze" begin="dummyRect5.mouseover" end="dummyRect5.mouseout" dur="0.1s" id="bounce15" />
+                            <!-- slide up and curve in -->
+                            <animate xlink:href="#p5" attributename="d" to="M0,50 Q80,0 400,50 V150 H0 V50" fill="freeze" begin="bounce15.end" end="dummyRect5.mouseout" dur="0.15s" id="bounce25" />
+                            <!-- slide down and curve in -->
+                            <animate xlink:href="#p5" attributename="d" to="M0,50 Q80,80 400,50 V150 H0 V50" fill="freeze" begin="bounce25.end" end="dummyRect5.mouseout" dur="0.15s" id="bounce35" />
+                            <!-- slide down and curve out -->
+                            <animate xlink:href="#p5" attributename="d" to="M0,50 Q80,45 400,50 V150 H0 V50" fill="freeze" begin="bounce35.end" end="dummyRect5.mouseout" dur="0.1s" id="bounce45" />
+                            <!-- curve in -->
+                            <animate xlink:href="#p5" attributename="d" to="M0,50 Q80,50 400,50 V150 H0 V50" fill="freeze" begin="bounce45.end" end="dummyRect5.mouseout" dur="0.05s" id="bounce55" />
+                
+                            <animate xlink:href="#p5" attributename="d" to="M0,200 Q80,100 400,200 V150 H0 V50" fill="freeze" begin="dummyRect5.mouseout" dur="0.15s" id="bounceOut5" />
+                        </svg>
+                        <div class="info">
+                            <div class="name">Kola</div>
+                            <div class="job">Simple CSS art </div>
+                        </div>
+                        <div class="connections">
+                            <button type="button" onclick="window.location.href='https://codepen.io/verreauxblack/pen/JjXagYe';" title="codepen" class="connection code">Code</button>
+                            <button type="button" onclick="window.location.href='Kola/';"   class="connection live">Live</button>
+                        </div>
+                    </div>
+                    <div class="card-blur"></div>
+                </div>
+                <!-- end of kola -->
+
+                <div class="pokedex card">
+                    <div class="footer">
+                        <svg id="curve6">
+                            <path id="p6" d="M0,200 Q80,100 400,200 V150 H0 V50" transform="translate(0 300)" />
+                            <rect id="dummyRect6" x="0" y="0" height="450" width="400"
+                        fill="transparent" />
+                            <!-- slide up-->
+                            <animate xlink:href="#p6" attributename="d" to="M0,50 Q80,100 400,50 V150 H0 V50" fill="freeze" begin="dummyRect6.mouseover" end="dummyRect6.mouseout" dur="0.1s" id="bounce16" />
+                            <!-- slide up and curve in -->
+                            <animate xlink:href="#p6" attributename="d" to="M0,50 Q80,0 400,50 V150 H0 V50" fill="freeze" begin="bounce16.end" end="dummyRect6.mouseout" dur="0.15s" id="bounce26" />
+                            <!-- slide down and curve in -->
+                            <animate xlink:href="#p6" attributename="d" to="M0,50 Q80,80 400,50 V150 H0 V50" fill="freeze" begin="bounce26.end" end="dummyRect6.mouseout" dur="0.15s" id="bounce36" />
+                            <!-- slide down and curve out -->
+                            <animate xlink:href="#p6" attributename="d" to="M0,50 Q80,45 400,50 V150 H0 V50" fill="freeze" begin="bounce36.end" end="dummyRect6.mouseout" dur="0.1s" id="bounce46" />
+                            <!-- curve in -->
+                            <animate xlink:href="#p6" attributename="d" to="M0,50 Q80,50 400,50 V150 H0 V50" fill="freeze" begin="bounce46.end" end="dummyRect6.mouseout" dur="0.05s" id="bounce56" />
+                
+                            <animate xlink:href="#p6" attributename="d" to="M0,200 Q80,100 400,200 V150 H0 V50" fill="freeze" begin="dummyRect6.mouseout" dur="0.15s" id="bounceOut6" />
+                        </svg>
+                        <div class="info">
+                            <div class="name">Pokedex</div>
+                            <div class="job">working for Animation,<br> Only structure is completed </div>
+                        </div>
+                        <div class="connections">
+                            <button type="button" onclick="window.location.href='https://codepen.io/verreauxblack/pen/qBZgVZd';" title="codepen" class="connection code">Code</button>
+                            <button type="button" onclick="window.location.href='pokedex/';"   class="connection live">Live</button>
+                        </div>
+                    </div>
+                    <div class="card-blur"></div>
+                </div>
+                <!-- end of pokedex -->
+                <div class="cityscape card">
+                    <div class="footer">
+                        <svg id="curve7">
+                            <path id="p7" d="M0,200 Q80,100 400,200 V150 H0 V50" transform="translate(0 300)" />
+                            <rect id="dummyRect7" x="0" y="0" height="450" width="400"
+                        fill="transparent" />
+                            <!-- slide up-->
+                            <animate xlink:href="#p7" attributename="d" to="M0,50 Q80,100 400,50 V150 H0 V50" fill="freeze" begin="dummyRect7.mouseover" end="dummyRect7.mouseout" dur="0.1s" id="bounce17" />
+                            <!-- slide up and curve in -->
+                            <animate xlink:href="#p7" attributename="d" to="M0,50 Q80,0 400,50 V150 H0 V50" fill="freeze" begin="bounce17.end" end="dummyRect7.mouseout" dur="0.15s" id="bounce27" />
+                            <!-- slide down and curve in -->
+                            <animate xlink:href="#p7" attributename="d" to="M0,50 Q80,80 400,50 V150 H0 V50" fill="freeze" begin="bounce27.end" end="dummyRect7.mouseout" dur="0.15s" id="bounce37" />
+                            <!-- slide down and curve out -->
+                            <animate xlink:href="#p7" attributename="d" to="M0,50 Q80,45 400,50 V150 H0 V50" fill="freeze" begin="bounce37.end" end="dummyRect7.mouseout" dur="0.1s" id="bounce47" />
+                            <!-- curve in -->
+                            <animate xlink:href="#p7" attributename="d" to="M0,50 Q80,50 400,50 V150 H0 V50" fill="freeze" begin="bounce47.end" end="dummyRect7.mouseout" dur="0.05s" id="bounce57" />
+                
+                            <animate xlink:href="#p7" attributename="d" to="M0,200 Q80,100 400,200 V150 H0 V50" fill="freeze" begin="dummyRect7.mouseout" dur="0.15s" id="bounceOut7" />
+                        </svg>
+                        <div class="info">
+                            <div class="name">cityscape</div>
+                            <div class="job">working on it<br> </div>
+                        </div>
+                        <div class="connections">
+                            <button type="button" onclick="window.location.href='#';" title="codepen" class="connection code">Code</button>
+                            <button type="button" onclick="window.location.href='cityscape/';"   class="connection live">Live</button>
+                        </div>
+                    </div>
+                    <div class="card-blur"></div>
+                </div>
+                <!-- end of cityscape -->
+            </div>
+       </div>
+
+        <!-- <footer>
+
+            <div class="social-media">
+              <a href="https://twitter.com/verreauxblack" target="_blank"><img src="pic/social media/twitter.png" alt="Twitter" class="image" title="Twitter"></a>
+              <a href="https://instagram.com/_verreauxblack" target="_blank"><img src="pic/social media/instagram (1).png" alt="" class="image" title="Instagram"></a>
+              <a href="https://codepen.io/verreauxblack" target="_blank"><img src="pic/social media/codepen.png" alt="codepen" class="image" title="Codepen" style="background-color: white; padding: 1px; border-radius: 5px;"></a>
+               <a href="https://t.me/verreauxblack" target="_blank"><img src="pic/social media/telegram.png" alt="telegram" class="image" title="Telegram"></a> 
+              <a href="https://github.com/verreauxblack" target="_blank"><img src="pic/social media/github.png " alt="github" class="image" title="GitHub"></a>
+              <a href="mailto:verreauxblack@outlook.com"><img src="pic/social media/outlook.png" alt="outlook" class="image" title="Outlook"></a>
+              <a href="mailto:verreauxblack@gmail.com"><img src="pic/social media/gmail.png" alt="gmail" class="image" title="Gmail"></a>
+            </div>
+            <div class="designed">
+              <h3>@2020 Designed and Developed</h3>
+              <h1>by <strong>RAJKUMAR</strong></h1>
+            </div>
+          </footer> -->
+          <span id="credits"></span>
+
+          <!-- jquery for navigation and footer -->
+          <script>
+            $(function() {
+                $("#navigation").load("html/navigation.html");
+            });
+            $(function(){
+                $("#credits").load("html/footer.html");s
+            })
+          </script>
     </body>
 </html>
