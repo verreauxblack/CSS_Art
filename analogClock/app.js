@@ -42,3 +42,32 @@ function initDate(){
 
 initClock();
 initDate();
+
+const degree = "40deg";
+const sec = 700;
+
+document.getElementById("-+").addEventListener("click",()=>{
+    document.getElementById("clock").style.transform="rotate3d(1,-1,0,"+degree+")";
+    setTimeout(() => {
+        document.getElementById("clock").style.removeProperty("transform");
+    }, sec);
+});
+
+document.getElementById("++").addEventListener("click",()=>{
+    document.getElementById("clock").style.transform="rotate3d(1,1,0,"+degree+")";
+    setTimeout(() => {
+        document.getElementById("clock").style.removeProperty("transform");
+    }, sec);
+});
+document.getElementById("--").addEventListener("click",()=>{
+    document.getElementById("clock").style.transform="rotate3d(-1,-1,0,"+degree+")";
+    setTimeout(() => {
+        document.getElementById("clock").style.removeProperty("transform");
+    }, sec);
+});
+document.getElementById("+-").addEventListener("click",()=>{
+    document.getElementById("clock").style.transform="rotate3d(-1,1,0,"+degree+")";
+    setTimeout(() => {
+        document.getElementById("clock").style.removeProperty("transform");
+    }, sec);
+});

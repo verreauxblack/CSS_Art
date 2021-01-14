@@ -11,6 +11,10 @@
     box-sizing: border-box;
 }
 
+:root{
+    --backround-color: rgb(221, 217, 217);
+}
+
 body{
     display: flex;
     align-items: center;
@@ -22,10 +26,10 @@ body{
     top: 90px;
     height: var(--width);
     width: var(--width);
-    /* border: 2px solid black; */
     display: flex;
     align-items: center;
     justify-content: center;
+    perspective: 1000px;
 }
 
 .clock{
@@ -34,14 +38,18 @@ body{
     height: var(--width);
     width: var(--width);
     border-radius: 50%;
-    border: 4px solid black;
+    border: 7px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: -2;
-    transform: perspective(3d);
-    /* transform: rotate(40deg); */
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    box-shadow: #FFD700;
+    
 }
+
+
 .clock::before{
     content: "";
     width: 25px;
@@ -49,54 +57,70 @@ body{
     border-radius: 50%;
     background-color: black;
     z-index: 10000;
+    transform: translateZ(2.5rem);
 }
 
 .clock::after{
     content: "";
-    --width: 400px;
+    --width: 280px;
     position: absolute;
-    /* background-color: black; */
+    background-color: var(--backround-color);
     opacity: .7;
     height: var(--width);
     width: var(--width);
     border-radius: 50%;
-    border: 4px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: -2;
     
-    transform: translateZ(30deg);
+    transform: translateZ(-5rem);
 }
 
 .clock span{
     font-size: 4rem;
     padding: 2px;
     position: absolute;
-    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
+}
+.twelve,.three,.six,.nine{
+    position: relative;
+    transform: translateZ(5rem);
+    transform-style: preserve-3d;
 }
 .twelve::after,.three::after,.six::after,.nine::after{
     content: "";
     position: absolute;
-    width: 4rem;
-    height: 4rem;
     background: white;
     top: 0;
     left: 0;
     right: 0;
     z-index: -1;
+    transform: translateZ(-4rem);
 }
-
+.twelve::after{
+    width: 5rem;
+    top: 22px;
+    height: 2rem;
+}
 
 .six::after{
     left: -10px;
     padding: 0;
+    top: 25px;
+    width: 4rem;
+    height: 2rem;
 }
 .three::after,.nine::after{
     padding-bottom: 8px;
+    left: 5px;
+    width: 2rem;
+    height: 4rem;
 }
-
+.nine::after{
+    left: 2px;
+}
 .twelve{
     top: -35px;
     padding: 0 5px;
@@ -114,7 +138,9 @@ body{
     left: -15px;
 }
 
-
+.hourHand,.minuteHand,.secondHand{
+    transform-style: preserve-3d;
+}
 
 .hourHand{
     position: absolute;
@@ -130,6 +156,7 @@ body{
     width: 10px;
     height: 100px;
     border-radius: 10px 10px 0 0;
+    transform: translateZ(2.5rem);
 }
 
 .minuteHand{
@@ -146,6 +173,7 @@ body{
     width: 7px;
     height: 150px;
     border-radius: 10px 10px 0 0 ;
+    transform: translateZ(2.5rem);
 }
 
 .secondHand{
@@ -158,21 +186,34 @@ body{
 .secondHand::before{
     content: "";
     position: absolute;
-    background-color: #FFD700;
+    background-color: #ffee00;
     width: 4px;
     height: 220px;
     border-radius: 10px 10px 0 0 ;
+    transform: translateZ(2.5rem);
 }
 
 
 .date{
     position: absolute;
-    bottom: 80px;
+    bottom: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: blue;
     font-weight: 600;
     font-family: 'Digital Numbers Regular';
+    transform: translateZ(1rem);
 
+}
+
+.circle{
+    --width:400px;
+    position: absolute;
+    width: var(--width);
+    height: var(--width);
+    border-radius: 50%;
+    display: grid;
+    grid-template: repeat(2, 1fr) /repeat(2, 1fr) ;
+    overflow: hidden;
 }
