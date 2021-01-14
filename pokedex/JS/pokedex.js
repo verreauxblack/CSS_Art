@@ -5,7 +5,7 @@ var pokemonDetails = {
             "name" : "Pichu",
             "type" : "Electric",
             "weakness" :"Ground",
-            "Img-215x215" : "pic/pikachu/pichu-1.png",
+            "Img-215x215" : "-10px -10px",
             "nameAudio" : "mp3/pokemons/pichu.mp3"
 
             
@@ -340,52 +340,6 @@ var pokemonDetails = {
     //         "nameAudio" : "mp3/pokemons/.mp3"
     //     }
     // },
-    // 15 : {
-    //     0 : {
-    //         "name" : "",
-    //         "type" : "",
-    //         "weakness" :"",
-    //         "Img-215x215" : "",
-    //         "nameAudio" : "mp3/pokemons/.mp3"
-    //     },
-    //     1 : {
-    //         "name" : "",
-    //         "type" : "",
-    //         "weakness" :"",
-    //         "Img-215x215" : "",
-    //         "nameAudio" : "mp3/pokemons/.mp3"
-    //     },
-    //     2 : {
-    //         "name" : "",
-    //         "type" : "",
-    //         "weakness" :"",
-    //         "Img-215x215" : "",
-    //         "nameAudio" : "mp3/pokemons/.mp3"
-    //     }
-    // },
-    // 15 : {
-    //     0 : {
-    //         "name" : "",
-    //         "type" : "",
-    //         "weakness" :"",
-    //         "Img-215x215" : "",
-    //         "nameAudio" : "mp3/pokemons/.mp3"
-    //     },
-    //     1 : {
-    //         "name" : "",
-    //         "type" : "",
-    //         "weakness" :"",
-    //         "Img-215x215" : "",
-    //         "nameAudio" : "mp3/pokemons/.mp3"
-    //     },
-    //     2 : {
-    //         "name" : "",
-    //         "type" : "",
-    //         "weakness" :"",
-    //         "Img-215x215" : "",
-    //         "nameAudio" : "mp3/pokemons/.mp3"
-    //     }
-    // },
 };
 
 var pokemonsLength = Object.keys(pokemonDetails).length;
@@ -613,7 +567,10 @@ document.getElementById("up").addEventListener("click", ()=>{
 
 //fuction to move pokemon left & right
 function pokemonMove(i,j){
-    document.getElementById("pokemon").src=pokemonDetails[i][j]["Img-215x215"];
+
+    // document.getElementById("pokemon").style.width="100px";
+    // document.getElementById("pokemon").style.height="100px";
+    document.getElementById("pokemon").style.="url(pic/css_sprites.png) "+pokemonDetails[i][j]["Img-215x215"];
     document.getElementById("pokemon").alt=pokemonDetails[i][j]["name"];
     document.getElementById("pokemon").style.transition="animation 2s ease-in-out";
 

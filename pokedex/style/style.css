@@ -49,10 +49,7 @@ body {
   background-color: #ff0000;
   border: 0.3px solid black;
   border-radius: 10px;
-<<<<<<< HEAD
   overflow: hidden;
-=======
->>>>>>> f2c0f496b1b445f54f836fe49ad1842bcd66d530
 }
 
 .layer1 {
@@ -124,7 +121,6 @@ body {
 
 .center-top {
   position: absolute;
-<<<<<<< HEAD
   top: -45px;
   left: -1px;
 }
@@ -134,33 +130,6 @@ body {
   height: 36vmin;
   bottom: 1vmin;
   left: 1vmin;
-=======
-  border: 0.2px solid black;
-  border-radius: 5px;
-  border-top-right-radius: 0;
-}
-
-.main-border2 {
-  width: 8.3vmin;
-  height: 5vmin;
-  position: absolute;
-  border: 0.2px solid black;
-  top: 7vmin;
-  right: 4vmin;
-  background-color: #ff0000;
-  border-bottom: 0;
-  border-left: 0;
-  border-top-left-radius: .3px;
-  border-top-right-radius: 5px;
-}
-
-.main-border3 {
-  width: 6.4vmin;
-  height: 8.5vmin;
-  -webkit-transform: rotate(-39.5deg);
-          transform: rotate(-39.5deg);
-  border-top: 0.2px solid black;
->>>>>>> f2c0f496b1b445f54f836fe49ad1842bcd66d530
   position: absolute;
   border: 0.2px solid black;
   border-radius: 5px;
@@ -195,7 +164,6 @@ body {
   border-radius: 50%;
   position: absolute;
   border: 0.3px solid black;
-<<<<<<< HEAD
   background: #e1edf4;
   background: radial-gradient(circle, #e1edf4 5%, #e1edf4 calc(var(--position) - 15%), #f8f8f8 var(--position), #0fadfe 70%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e1edf4",endColorstr="#0fadfe",GradientType=1);
@@ -244,10 +212,6 @@ body {
   50% {
     --position: 50%;
   }
-=======
-  background: #f3f3f3;
-  background: radial-gradient(circle, #f3f3f3 9%, #0fadfe 70%);
->>>>>>> f2c0f496b1b445f54f836fe49ad1842bcd66d530
 }
 
 .lights {
@@ -361,7 +325,6 @@ h3.power, .hi {
   border-radius: 50%;
   background-color: #e60000;
   border: 0.3px solid black;
-<<<<<<< HEAD
 }
 
 .indicate {
@@ -403,8 +366,6 @@ h3.power, .hi {
   100% {
     background-color: yellow;
   }
-=======
->>>>>>> f2c0f496b1b445f54f836fe49ad1842bcd66d530
 }
 
 .power-light {
@@ -416,13 +377,10 @@ h3.power, .hi {
   left: 2vmin;
   background-color: #e60000;
   border: 0.3px solid black;
-<<<<<<< HEAD
 }
 
 .power-light:hover {
   background-color: #ff4d4d;
-=======
->>>>>>> f2c0f496b1b445f54f836fe49ad1842bcd66d530
 }
 
 .stripes {
@@ -464,7 +422,6 @@ h3.power, .hi {
   bottom: 3.8vmin;
   background-color: green;
   border-radius: 8px;
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -483,8 +440,6 @@ h3.power, .hi {
 .volume-up {
   color: white;
   font-size: x-large;
-=======
->>>>>>> f2c0f496b1b445f54f836fe49ad1842bcd66d530
 }
 
 .main-border .lights {
@@ -521,13 +476,10 @@ h3.power, .hi {
   right: -19.5vmin;
 }
 
-<<<<<<< HEAD
 .Blink {
   background-color: white !important;
 }
 
-=======
->>>>>>> f2c0f496b1b445f54f836fe49ad1842bcd66d530
 .circle {
   width: 3vmin;
   height: 3vmin;
@@ -545,21 +497,17 @@ h3.power, .hi {
           align-items: center;
 }
 
-<<<<<<< HEAD
 .circle:hover .small-circle {
   background-color: white;
   opacity: 1;
 }
 
-=======
->>>>>>> f2c0f496b1b445f54f836fe49ad1842bcd66d530
 .right, .left, .up, .down {
   position: absolute;
   width: 2.7vmin;
   height: 3.4vmin;
   background-color: #333333;
   border-radius: 21% 21% 50% 50% / 13% 13% 33% 33%;
-<<<<<<< HEAD
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-transition: all 175ms cubic-bezier(0, 0, 1, 1);
@@ -569,8 +517,6 @@ h3.power, .hi {
 .right:hover .triangle, .left:hover .triangle, .up:hover .triangle, .down:hover .triangle {
   background-color: white;
   opacity: 1;
-=======
->>>>>>> f2c0f496b1b445f54f836fe49ad1842bcd66d530
 }
 
 .small-circle {
@@ -587,7 +533,6 @@ h3.power, .hi {
   border-right: 0.5px solid black;
 }
 
-<<<<<<< HEAD
 .up:hover {
   -webkit-transform: translate(0 30px);
           transform: translate(0 30px);
@@ -598,8 +543,6 @@ h3.power, .hi {
           transform: translate(0 50px);
 }
 
-=======
->>>>>>> f2c0f496b1b445f54f836fe49ad1842bcd66d530
 .right {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
@@ -638,214 +581,6 @@ h3.power, .hi {
   position: absolute;
 }
 
-<<<<<<< HEAD
-=======
-.flip {
-  position: absolute;
-  width: 29vmin;
-  height: 38.6vmin;
-  bottom: 0.5vmin;
-  left: 32vmin;
-  background-color: #ff0000;
-  border-radius: 10px;
-  border-top-left-radius: 0;
-  border: 0.2px solid black;
-  cursor: pointer;
-}
-
-.flip .main-border {
-  background-color: #ff0000;
-  height: 36.4vmin;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 0;
-}
-
-.flip .main-border2 {
-  top: -3.2vmin;
-  left: 1vmin;
-  border-left: 0.2px solid black;
-  border-right: 0;
-  z-index: 1;
-  border-top-right-radius: 0;
-  border-top-left-radius: 5px;
-}
-
-.flip .main-border3 {
-  -webkit-transform: rotate(39.4deg);
-          transform: rotate(39.4deg);
-  top: -2.1vmin;
-  left: 5.9vmin;
-  z-index: 1;
-}
-
-.openFlip {
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
-  -webkit-transform-origin: 3vmin;
-          transform-origin: 3vmin;
-  -webkit-transition: .5s linear;
-  transition: .5s linear;
-}
-
-.flip2 {
-  width: 9.3vmin;
-  height: 5vmin;
-  position: absolute;
-  background-color: #ff0000;
-  border-bottom: 0;
-  border-top-left-radius: .3px;
-  top: -4.35vmin;
-  left: -0.1vmin;
-  border-left: 0.2px solid black;
-  border-top: 0.2px solid black;
-  border-right: 0;
-}
-
-.flip3 {
-  width: 6.7vmin;
-  height: 7.5vmin;
-  border-top: 0.2px solid black;
-  position: absolute;
-  border-top-right-radius: .3px;
-  background-color: #ff0000;
-  -webkit-transform: rotate(38.9deg);
-          transform: rotate(38.9deg);
-  top: -3.075vmin;
-  left: 6.2vmin;
-}
-
-.flip .screen:first-child {
-  z-index: 2;
-  width: 23vmin;
-  height: 7vmin;
-  border-radius: 3px;
-}
-
-.flip .screen:nth-child(2), .flip .screen:nth-child(3) {
-  border-radius: 4px;
-  width: 8vmin;
-  top: 30vmin;
-  height: 3.5vmin;
-}
-
-.flip .screen:nth-child(3) {
-  left: 17vmin;
-}
-
-.flip .main-border .lights {
-  width: 7vmin;
-  left: 15vmin;
-  top: 21vmin;
-}
-
-.flip .main-border .lights .light-indi {
-  background-color: black;
-}
-
-.blue-buttons {
-  width: 23vmin;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 0vmin;
-  position: absolute;
-  -ms-grid-rows: (3vmin)[2];
-  -ms-grid-columns: (1fr)[5];
-      grid-template: repeat(2, 3vmin)/repeat(5, 1fr);
-  border-radius: 4px;
-  top: 12.5vmin;
-  left: 2vmin;
-  background-color: #239ed0;
-  border: 0.2px solid black;
-}
-
-.blue-buttons .btn:nth-child(1) {
-  border-right: 0.3px solid black;
-}
-
-.blue-buttons .btn:nth-child(2) {
-  border-right: 0.3px solid black;
-}
-
-.blue-buttons .btn:nth-child(3) {
-  border-right: 0.3px solid black;
-}
-
-.blue-buttons .btn:nth-child(4) {
-  border-right: 0.3px solid black;
-}
-
-.blue-buttons .btn:nth-child(6) {
-  border-top: 0.3px solid black;
-  border-right: 0.3px solid black;
-}
-
-.blue-buttons .btn:nth-child(7) {
-  border-top: 0.3px solid black;
-  border-right: 0.3px solid black;
-}
-
-.blue-buttons .btn:nth-child(8) {
-  border-top: 0.3px solid black;
-  border-right: 0.3px solid black;
-}
-
-.blue-buttons .btn:nth-child(9) {
-  border-top: 0.3px solid black;
-  border-right: 0.3px solid black;
-}
-
-.blue-buttons .btn:nth-child(10) {
-  border-top: 0.3px solid black;
-  border-right: 0.3px solid black;
-}
-
-.blue-buttons .btn:nth-child(10) {
-  border-right: 0;
-}
-
-.under {
-  top: 12.7vmin;
-  left: 2.25vmin;
-}
-
-.white-button {
-  width: 8vmin;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 0vmin;
-  position: absolute;
-  -ms-grid-rows: 3vmin;
-  -ms-grid-columns: (1fr)[2];
-      grid-template: 3vmin/repeat(2, 1fr);
-  background-color: white;
-  top: 23vmin;
-  left: 2vmin;
-  border-radius: 4px;
-  border: 0.1px solid black;
-}
-
-.white-button .btn:first-child {
-  border-right: 0.1px solid black;
-}
-
-.under2 {
-  top: 23.2vmin;
-  left: 2.2vmin;
-}
-
-.golden-button {
-  width: 3vmin;
-  height: 3vmin;
-  border-radius: 50%;
-  background: white;
-  border: 0.3px solid black;
-  top: 24vmin;
-  position: absolute;
-  left: 20vmin;
-  background: radial-gradient(circle, white 11%, #ebe50c 41%, #88852c 92%);
-}
-
->>>>>>> f2c0f496b1b445f54f836fe49ad1842bcd66d530
 .cylinder {
   position: relative;
   width: 3.15vmin;

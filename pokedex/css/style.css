@@ -590,6 +590,8 @@ body {
   position: absolute;
   width: 100px;
   height: 90px;
+  background-position: center;
+  background-repeat: no-repeat;
   z-index: 2;
 }
 
@@ -603,5 +605,21 @@ h3.power, .hi {
   color: white;
   font-size: .6rem;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
