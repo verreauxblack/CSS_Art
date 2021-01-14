@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <meta name="keywords" content="clock, analog, analogclock, cssart, css, css clock"/>
+    <meta name="keywords" content="clock, analog, animated,  analogclock, cssart, css, css clock"/>
     <title>Analog Clock</title>
 </head>
 <body>
     <div class="container">
 
-        <div class="clock">
+        <div id="clock" class="clock">
             <div id="day" class="date"></div>
             <span class="twelve">12</span>
             <span class="three">3</span>
@@ -20,7 +20,12 @@
             <div id="minuteHand" class="minuteHand"></div>
             <div id="secondHand" class="secondHand"></div>
         </div>
-
+        <div class="circle">
+            <div id="-+" class="quarts"></div>
+            <div id="++" class="quarts"></div>
+            <div id="--" class="quarts"></div>
+            <div id="+-" class="quarts"></div>
+        </div>
     </div>
 
     <script src="app.js"></script>
