@@ -259,7 +259,7 @@ i {
 }
 
 .menu__listings {
-  --size:350px;
+  --size: 350px;
   z-index: 10;
   position: absolute;
   top: -200px;
@@ -573,7 +573,13 @@ i {
   bottom: 0;
 }
 
-#curve, #curve2, #curve3, #curve4, #curve5, #curve6, #curve7 {
+#curve,
+#curve2,
+#curve3,
+#curve4,
+#curve5,
+#curve6,
+#curve7 {
   position: absolute;
   fill: white;
   left: 0;
@@ -697,6 +703,10 @@ i {
   background-image: url(/pic/Pokeball.gif);
 }
 
+.lightsaber {
+  background-image: url(/pic/light-sabar-with-name.gif);
+}
+
 .kola {
   background-image: url(/pic/kola.png);
 }
@@ -710,7 +720,7 @@ i {
 }
 
 .analogclock {
-  background-image: url(/pic/analogClock.png);
+  background-image: url(/pic/analog-clock.gif);
 }
 
 /* Footer */
@@ -762,7 +772,7 @@ footer i {
   font-size: 2.5rem;
   background: #f09433;
   background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -808,9 +818,10 @@ footer i {
   align-items: center;
 }
 
-.designed h3, .designed h1 {
+.designed h3,
+.designed h1 {
   color: white;
-  font-family: cooper-black-std,serif;
+  font-family: cooper-black-std, serif;
   font-weight: 400;
   font-style: normal;
 }

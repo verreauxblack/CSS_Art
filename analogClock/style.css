@@ -19,10 +19,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 .container{
     --width : 500px;
-    position: absolute;
+    position: relative;
     top: 90px;
     height: var(--width);
     width: var(--width);
@@ -216,4 +217,14 @@ body{
     display: grid;
     grid-template: repeat(2, 1fr) /repeat(2, 1fr) ;
     overflow: hidden;
+}
+
+
+footer{
+    margin-top:20vh;
+}
+
+footer a{
+    text-decoration: none;
+    color: black
 }
