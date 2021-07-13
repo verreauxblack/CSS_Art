@@ -15,7 +15,7 @@
 body {
     font-size: 1.5rem;
     display: grid;
-    grid-template: 100px 50px 1fr / repeat(6, 1fr);
+    grid-template: 100px 50px 1fr 20px / repeat(6, 1fr);
     place-items: center;
     text-transform: uppercase;
     background-color: black;
@@ -50,7 +50,7 @@ body {
     background-color: red;
     border-radius: 0 0 4px 4px;
     background-image: linear-gradient(silver 0 10px,
-            hsl(45, 100%, 50%) 0 20px,
+            hsl(45, 100%, 38%) 0 20px,
             silver 0 22px,
             black 0 28px,
             silver 0 30px,
@@ -148,9 +148,54 @@ body {
     --lighten: 100%
 }
 
-#dark:checked~.lightsaber .blade:before{
-        background-color: black;
+#dark:checked~.lightsaber .blade:before {
+    background-color: black;
 }
-#dark:checked~.lightsaber .blade{
+
+#dark:checked~.lightsaber .blade {
     border-radius: 100px / 200% 5px 0 0;
+}
+
+
+footer {
+    margin-top: 80px;
+    font-size: 1rem;
+    text-transform: lowercase;
+    place-items: center;
+    grid-column: 1/-1;
+}
+
+footer a {
+    text-decoration: none;
+    color: hsl(var(--hue) 100% var(--lighten) / 1);
+}
+#green:checked~ footer {
+    --hue: 120;
+}
+
+#red:checked~ footer {
+    --hue: 10;
+}
+
+#yellow:checked~ footer {
+    --hue: 60;
+}
+
+#blue:checked~ footer {
+    --hue: 240;
+}
+
+#violet:checked~ footer {
+    --hue: 300;
+}
+
+#dark:checked~ footer {
+    --lighten: 100%
+}
+
+
+@media screen and (max-width: 600px) {
+    label:not(.handle)  {
+        font-size: .9rem;  
+    }
 }
